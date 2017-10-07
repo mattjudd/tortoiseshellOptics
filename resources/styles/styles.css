@@ -1,0 +1,243 @@
+/*** global ***/
+html {
+  font-size: 18px;
+  line-height: 1.4rem;
+  font-family: Helvetica, sans-serif;
+}
+header {
+  background-image: url('../images/glasses-bg.png');
+  background-size: cover;
+  height: 31rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-container {
+  width: 960px;
+}
+.flex-centre {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.blue-box {
+  background-color: cadetblue;
+  color: white;
+}
+
+/** header **/
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#site-logo {
+  display: flex;
+  align-items: center;
+}
+#site-logo img {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem
+}
+nav ul li {
+  display: inline-block;
+  margin: 1rem 2rem;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+#mobile-menu {
+  display: none;
+}
+#title {
+  margin-top: 10rem;
+}
+#title-content {
+    display: inline-block;
+    float: right;
+    padding: 1.5rem 5rem;
+    position: relative;
+    right: -2rem;
+    background-color: white;
+}
+
+/** product icons **/
+
+#product-icons {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  height: 8rem;
+}
+.icon {
+  width: 5rem;
+  height: 100%;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon-image {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-image img {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+.icon-caption {
+  text-align: center;
+}
+#exams .icon-caption {
+  width: 150%;
+  margin-left: -25%;
+}
+
+/** details **/
+
+#details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.detail-col {
+  width: 35%;
+  margin-right: 5%;
+}
+.detail-header {
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+}
+.detail-text {
+  margin-top: 1rem;
+}
+
+
+/** footer ***/
+
+#footer-body {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+#footer-content {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+#footer-content img {
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+  .main-container {
+    width: 100%;
+  }
+  #top-bar {
+    margin-top: 0;
+  }
+  #title {
+    margin-top: 5rem;
+  }
+  #title-content {
+      padding: 0.75rem 4rem;
+      right: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 468px) {
+    #site-logo span,
+    #footer-content span,
+    nav ul li {
+    display: none;
+    }
+    h1 {
+      font-size: 1rem;
+    }
+    header {
+      height: 17rem;
+    }
+    #mobile-menu {
+      display: inline-block;
+    }
+    #title {
+      margin-top: 9rem;
+    }
+    #title-content {
+        width: 100%;
+        padding: 1rem;
+        right: 0;
+        text-align: center;
+    }
+    main {
+      font-size: 0.77rem;
+    }
+    #product-icons {
+      flex-direction: column;
+      align-items: center;
+      padding: 3.77rem 0 2.23rem;
+      height: unset;
+    }
+    .icon {
+      width: 5rem;
+      height: unset;
+      margin: 0 3rem 1.54rem;
+      align-items: center;
+    }
+    .icon-image {
+      height: unset;
+    }
+    .icon-image {
+      width: 5rem;
+    }
+    #exams .icon-image {
+      width: 3.5rem;
+    }
+    #exams .icon-caption {
+      margin: 0;
+    }
+    #details {
+        justify-content: center;
+        flex-drection: column;
+        margin-bottom: 0;
+    }
+    .detail-col {
+      width: 100%;
+      margin-right: 0;
+    }
+    .detail-header {
+      font-weight: bold;
+      padding: 0.5rem 1.25rem;
+      width: 100%;
+    }
+    .detail-text {
+      margin: 1rem 0.5rem 4rem;
+    }
+    #footer-body {
+      justify-content: center;
+    }
+
+
+
+
+}
